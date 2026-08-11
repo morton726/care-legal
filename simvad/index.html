@@ -1,0 +1,346 @@
+<title>C.A.R.E. SimVAD — Privacy Policy &amp; Terms of Use</title>
+<style>
+  :root {
+    --ink: #1a1f24;
+    --ink-soft: #3a4249;
+    --paper: #FBFAF7;
+    --paper-raised: #FFFFFF;
+    --red: #B02036;
+    --red-soft: #FDE8EB;
+    --blue: #0E5182;
+    --blue-soft: #E7F0F7;
+    --line: #E2DFD8;
+    --muted: #746C60;
+    --serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  :root[data-theme="dark"] {
+    --ink: #EDEAE3;
+    --ink-soft: #C9C3B8;
+    --paper: #17191B;
+    --paper-raised: #1F2225;
+    --red: #E8637A;
+    --red-soft: #3A1E24;
+    --blue: #7FB4DC;
+    --blue-soft: #1B2A34;
+    --line: #33363A;
+    --muted: #9A9488;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #EDEAE3;
+      --ink-soft: #C9C3B8;
+      --paper: #17191B;
+      --paper-raised: #1F2225;
+      --red: #E8637A;
+      --red-soft: #3A1E24;
+      --blue: #7FB4DC;
+      --blue-soft: #1B2A34;
+      --line: #33363A;
+      --muted: #9A9488;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  /* header / brand */
+  header.top {
+    padding: 40px 0 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .brand .mark {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--red);
+    letter-spacing: 0.01em;
+  }
+  .brand .sub {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .company {
+    margin-top: 6px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+
+  /* nav pills */
+  nav.jump {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--paper);
+    padding: 14px 0;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  nav.jump a {
+    font-family: var(--sans);
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ink-soft);
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  nav.jump a:hover,
+  nav.jump a:focus-visible {
+    border-color: var(--red);
+    color: var(--red);
+  }
+  nav.jump a:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+  }
+
+  section.doc {
+    padding-top: 48px;
+  }
+  section.doc:first-of-type {
+    padding-top: 32px;
+  }
+
+  .eyebrow {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 6px;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+  .effective {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 32px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 36px 0 12px;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  section.doc > h2:first-of-type {
+    margin-top: 0;
+  }
+
+  p, li {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .callout {
+    background: var(--red-soft);
+    border: 1px solid color-mix(in srgb, var(--red) 30%, var(--line));
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 0 0 20px;
+    max-width: 62ch;
+  }
+  .callout p {
+    margin: 0;
+    color: var(--ink);
+    font-size: 14.5px;
+  }
+  .callout strong { color: var(--red); }
+
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 24px;
+    font-size: 14px;
+  }
+  table.data th, table.data td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.data th {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  table.data td { color: var(--ink-soft); }
+  .scroll-x { overflow-x: auto; }
+
+  a.inline {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 48px 0;
+  }
+
+  footer.legal {
+    font-size: 12.5px;
+    color: var(--muted);
+    padding-top: 24px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 520px) {
+    h1 { font-size: 26px; }
+    .wrap { padding: 0 18px 72px; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <span class="mark">C.A.R.E. SimVAD</span>
+      <span class="sub">Legal</span>
+    </div>
+    <div class="company">Published by Cardiac Advanced Resuscitation Education, LLC</div>
+  </header>
+
+  <nav class="jump" aria-label="Jump to document">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Use</a>
+  </nav>
+
+  <section class="doc" id="privacy">
+    <p class="eyebrow">Document 1 of 2</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective August 10, 2026</p>
+
+    <div class="callout">
+      <p><strong>In short:</strong> C.A.R.E. SimVAD does not collect, store, or transmit any personal or patient information. Every vital sign, waveform, and alarm in the app is synthetic — generated by the app's own simulation engine — and none of it ever leaves your device or local network.</p>
+    </div>
+
+    <h2>1. What this app is</h2>
+    <p>C.A.R.E. SimVAD is a training simulator for recognizing and responding to Left Ventricular Assist Device (LVAD) alarms and hemodynamic changes, built for nursing, paramedic, and critical care education. It is <strong>not a medical device</strong> and is not intended for use in the treatment or monitoring of real patients. All patient data displayed in the app — pump parameters, vitals, waveforms, and alarms — is synthetic and generated locally by the app. The patient shown on the console is fictional.</p>
+
+    <h2>2. Information we collect</h2>
+    <p>We collect none. C.A.R.E. SimVAD has no user accounts, no sign-in, no analytics SDKs, and no advertising identifiers. The table below covers every category of data the app touches:</p>
+    <div class="scroll-x">
+      <table class="data">
+        <thead>
+          <tr><th>Category</th><th>Collected?</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Patient / simulation data</td><td>No</td><td>All pump parameters, vitals, and waveforms are synthetic and generated on-device; nothing is recorded or transmitted.</td></tr>
+          <tr><td>Personal identifiers</td><td>No</td><td>No name, email, or account is required to use the app.</td></tr>
+          <tr><td>Location</td><td>No</td><td>The app does not access or request location data.</td></tr>
+          <tr><td>Usage analytics / tracking</td><td>No</td><td>No analytics, advertising, or tracking SDKs are included.</td></tr>
+          <tr><td>Local network pairing</td><td>Device-local only</td><td>The bedside-console device and instructor-controller device discover and connect to each other directly over your local Wi-Fi network. Session data (scenario, pump settings, hemodynamics) is exchanged only between those two paired devices and never reaches our servers, because we don't have any.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>3. Local network permission</h2>
+    <p>iOS will ask for local network permission the first time you pair two devices. This permission is used solely to discover and connect the console and controller devices on the same Wi-Fi network via Bonjour and a direct TCP connection. This traffic stays on your local network and is never sent to the internet.</p>
+
+    <h2>4. Children's privacy</h2>
+    <p>C.A.R.E. SimVAD is intended for clinical education audiences and is not directed at children. Because the app collects no personal information from any user, regardless of age, there is no data to disclose, sell, or remove.</p>
+
+    <h2>5. Data retention</h2>
+    <p>Simulation settings (the active scenario, pump speed, alarm thresholds) are stored only on your own device so a training session can resume where it left off. They are never sent to any server we control — we don't operate any.</p>
+
+    <h2>6. Changes to this policy</h2>
+    <p>If this policy changes, we'll update the effective date above and post the revised version at this same address.</p>
+
+    <h2>7. Contact</h2>
+    <p>Questions about this policy can be sent to <a class="inline" href="mailto:CAREAPPSupport@csu-als.org">CAREAPPSupport@csu-als.org</a>.</p>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="doc" id="terms">
+    <p class="eyebrow">Document 2 of 2</p>
+    <h1>Terms of Use</h1>
+    <p class="effective">Effective August 10, 2026</p>
+
+    <div class="callout">
+      <p><strong>⚠ Not a medical device.</strong> C.A.R.E. SimVAD is a training simulator only. It must never be used to guide the treatment, monitoring, or care of a real patient.</p>
+    </div>
+
+    <h2>1. Acceptance of terms</h2>
+    <p>By downloading, installing, or using C.A.R.E. SimVAD (the "App"), you agree to these Terms of Use. If you do not agree, do not use the App.</p>
+
+    <h2>2. Intended use</h2>
+    <p>The App is an educational training simulator for LVAD concepts — alarm recognition, pump parameters (speed, flow, power, pulsatility), and the hemodynamic patterns of common LVAD emergencies. It is designed for use by, or under the supervision of, qualified clinical educators in nursing, paramedic, and critical care training programs.</p>
+    <p>The App is not a medical device, is not FDA-cleared or approved, and must not be used for the diagnosis, treatment, monitoring, or management of any real patient. The simplified physiologic model behind the simulation is illustrative for teaching and is not validated against any real LVAD device firmware. All physiological data shown in the App is synthetic.</p>
+
+    <h2>3. Local network use</h2>
+    <p>Pairing the console and controller devices requires both devices to be on the same local Wi-Fi network and grants the App permission to communicate over that network. You are responsible for using the App only on networks you are authorized to use.</p>
+
+    <h2>4. Acceptable use</h2>
+    <ul>
+      <li>Do not use the App to make real clinical decisions or to represent simulated data as belonging to an actual patient.</li>
+      <li>Do not attempt to reverse-engineer, decompile, or interfere with the App's normal operation.</li>
+      <li>Do not use the App in any way that violates applicable law or the policies of your educational institution.</li>
+    </ul>
+
+    <h2>5. Disclaimer of warranties</h2>
+    <p>The App is provided "as is" for educational purposes, without warranties of any kind, express or implied, including fitness for a particular purpose. We do not warrant that the App will be error-free or uninterrupted.</p>
+
+    <h2>6. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, Cardiac Advanced Resuscitation Education, LLC is not liable for any indirect, incidental, or consequential damages arising from use of the App, including any reliance on the App for actual clinical decision-making — which is expressly against its intended use.</p>
+
+    <h2>7. Changes to these terms</h2>
+    <p>We may update these Terms from time to time. Continued use of the App after a change constitutes acceptance of the revised Terms, which will be posted at this same address with an updated effective date.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions about these Terms can be sent to <a class="inline" href="mailto:CAREAPPSupport@csu-als.org">CAREAPPSupport@csu-als.org</a>.</p>
+  </section>
+
+  <footer class="legal">
+    C.A.R.E. SimVAD and the C.A.R.E. SimVAD logo are trademarks of Cardiac Advanced Resuscitation Education, LLC. &copy; 2026 Cardiac Advanced Resuscitation Education, LLC. All rights reserved.
+  </footer>
+</div>
