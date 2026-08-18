@@ -42,6 +42,13 @@
   .app:hover, .app:focus-visible { border-color: var(--blue); }
   .app .name { font-family: var(--serif); font-weight: 700; font-size: 17px; color: var(--ink); }
   .app .desc { font-size: 13.5px; color: var(--muted); margin-top: 3px; }
+  .app-wrap { margin-bottom: 12px; }
+  .app-wrap .app { margin-bottom: 0; }
+  .guide {
+    display: inline-block; margin: 7px 0 0 20px; font-size: 12.5px;
+    color: var(--blue); text-decoration: none; font-weight: 600;
+  }
+  .guide:hover, .guide:focus-visible { text-decoration: underline; }
   footer { margin-top: 48px; font-size: 12px; color: var(--muted); }
 </style>
 </head>
@@ -50,20 +57,29 @@
     <h1>Legal Documents</h1>
     <p class="sub">Privacy policies and terms of use for apps published by Cardiac Advanced Resuscitation Education, LLC.</p>
 
-    <a class="app" href="/simpace/">
-      <div class="name">C.A.R.E. SimPace</div>
-      <div class="desc">Temporary pacemaker training simulator — Privacy Policy &amp; Terms of Use</div>
-    </a>
+    <div class="app-wrap">
+      <a class="app" href="/simpace/">
+        <div class="name">C.A.R.E. SimPace</div>
+        <div class="desc">Temporary pacemaker training simulator — Privacy Policy &amp; Terms of Use</div>
+      </a>
+      <a class="guide" href="/simpace/instructor-guide.pdf">📘 Instructor Guide (PDF)</a>
+    </div>
 
-    <a class="app" href="/simballoon/">
-      <div class="name">C.A.R.E. SimBalloon</div>
-      <div class="desc">Intra-aortic balloon pump training simulator &mdash; Privacy Policy &amp; Terms of Use</div>
-    </a>
+    <div class="app-wrap">
+      <a class="app" href="/simballoon/">
+        <div class="name">C.A.R.E. SimBalloon</div>
+        <div class="desc">Intra-aortic balloon pump training simulator &mdash; Privacy Policy &amp; Terms of Use</div>
+      </a>
+      <a class="guide" href="/simballoon/scenario-guide.pdf">📘 Scenario Guide (PDF)</a>
+    </div>
 
-    <a class="app" href="/simvad/">
-      <div class="name">C.A.R.E. SimVAD</div>
-      <div class="desc">LVAD alarm training simulator — Privacy Policy &amp; Terms of Use</div>
-    </a>
+    <div class="app-wrap">
+      <a class="app" href="/simvad/">
+        <div class="name">C.A.R.E. SimVAD</div>
+        <div class="desc">LVAD alarm training simulator — Privacy Policy &amp; Terms of Use</div>
+      </a>
+      <a class="guide" href="/simvad/instructor-guide.pdf">📘 Instructor Guide (PDF)</a>
+    </div>
 
     <footer>&copy; 2026 Cardiac Advanced Resuscitation Education, LLC</footer>
   </div>
