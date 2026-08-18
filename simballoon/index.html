@@ -280,13 +280,13 @@
           <tr><td>Location</td><td>No</td><td>The app does not access or request location data.</td></tr>
           <tr><td>Usage analytics / tracking</td><td>No</td><td>No analytics, advertising, or tracking SDKs are included.</td></tr>
           <tr><td>Local network pairing</td><td>Device-local only</td><td>The console and instructor devices discover and connect to each other directly over your local Wi-Fi network. Session data (rhythm, scenario, timing and pump settings) is exchanged only between those two paired devices and never reaches our servers, because we don't have any.</td></tr>
-          <tr><td>Subscription &amp; payment</td><td>Handled entirely by Apple</td><td>Purchases go through Apple's In-App Purchase system. We never see your payment details — Apple manages billing and simply confirms your subscription status to the app.</td></tr>
+          <tr><td>Subscription &amp; payment</td><td>Handled entirely by your app store</td><td>Purchases go through Apple's In-App Purchase system on iOS, or Google Play Billing on Android. We never see your payment details — the store manages billing and simply confirms your subscription status to the app.</td></tr>
         </tbody>
       </table>
     </div>
 
     <h2>3. Local network permission</h2>
-    <p>iOS will ask for local network permission the first time you pair two devices. This permission is used solely to discover and connect the console and instructor devices on the same Wi-Fi network via Bonjour and a direct TCP connection. This traffic stays on your local network and is never sent to the internet.</p>
+    <p>Your device will ask for permission to find devices on your local network the first time you pair two devices — local network permission on iOS, or nearby-devices permission on Android. This permission is used solely to discover and connect the console and instructor devices on the same Wi-Fi network via mDNS/Bonjour and a direct TCP connection. This traffic stays on your local network and is never sent to the internet. The Android app does not request location permission, and does not use Wi-Fi information to derive your location.</p>
 
     <h2>4. Children's privacy</h2>
     <p>C.A.R.E. SimBalloon is intended for clinical education audiences and is not directed at children. Because the app collects no personal information from any user, regardless of age, there is no data to disclose, sell, or remove.</p>
@@ -320,7 +320,7 @@
     <p>The App is not a medical device, is not FDA-cleared or approved, and must not be used for the diagnosis, treatment, monitoring, or management of any real patient. All physiological data shown in the App is synthetic.</p>
 
     <h2>3. Subscriptions</h2>
-    <p>Full access to the App requires an active subscription (monthly or annual), managed through Apple's In-App Purchase system. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID account settings. Pricing and any free trial terms are shown in the App and in the App Store listing before purchase.</p>
+    <p>Full access to the App requires an active subscription (monthly or annual), managed through the store you installed the App from — Apple's In-App Purchase system on iOS, or Google Play Billing on Android. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID account settings, or in the Google Play Store under Payments &amp; subscriptions. Pricing and any free trial terms are shown in the App and in the store listing before purchase.</p>
 
     <h2>4. Local network use</h2>
     <p>Pairing the console and instructor devices requires both devices to be on the same local Wi-Fi network and grants the App permission to communicate over that network. You are responsible for using the App only on networks you are authorized to use.</p>
